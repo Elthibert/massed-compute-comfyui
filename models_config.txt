@@ -1,0 +1,86 @@
+# Configuration des modèles à télécharger pour ComfyUI
+# Format: TYPE|URL|NOM|DESCRIPTION
+# Décommentez (enlevez le #) les lignes des modèles que vous voulez télécharger automatiquement
+# Ajoutez vos propres modèles en suivant le même format
+
+# ============================================
+# CHECKPOINTS (Modèles principaux)
+# ============================================
+
+# Stable Diffusion 1.5
+#CHECKPOINT|https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors|SD 1.5|Stable Diffusion 1.5 de base
+
+# Stable Diffusion XL
+#CHECKPOINT|https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors|SDXL Base|Stable Diffusion XL Base 1.0
+
+# Realistic Vision
+#CHECKPOINT|https://civitai.com/api/download/models/501240|Realistic Vision V6|Modèle photoréaliste populaire
+
+# DreamShaper XL
+#CHECKPOINT|https://civitai.com/api/download/models/351306|DreamShaper XL|Excellent pour tout type d'images
+
+# Juggernaut XL
+#CHECKPOINT|https://civitai.com/api/download/models/456194|Juggernaut XL V9|Photoréalisme haute qualité
+
+# ============================================
+# VAE
+# ============================================
+
+VAE|https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors|VAE Standard|VAE recommandé pour SD 1.5
+
+#VAE|https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors|SDXL VAE|VAE pour SDXL
+
+# ============================================
+# UPSCALERS
+# ============================================
+
+UPSCALER|https://huggingface.co/datasets/jiboli/upscalers/resolve/main/4x-UltraSharp.pth|4x-UltraSharp|Upscaler haute qualité
+
+#UPSCALER|https://huggingface.co/datasets/jiboli/upscalers/resolve/main/4x_NMKD-Superscale-SP_178000_G.pth|4x NMKD Superscale|Upscaler alternatif
+
+#UPSCALER|https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth|RealESRGAN x4|Upscaler réaliste
+
+# ============================================
+# CONTROLNET
+# ============================================
+
+#CONTROLNET|https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose.pth|OpenPose|Contrôle de pose humaine
+
+#CONTROLNET|https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth|Depth|Contrôle par carte de profondeur
+
+#CONTROLNET|https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.pth|Canny|Détection de contours
+
+# ============================================
+# LORAS
+# ============================================
+
+#LORA|https://civitai.com/api/download/models/87153|Detail Tweaker|Améliore les détails
+
+#LORA|https://civitai.com/api/download/models/135867|Add More Details|Ajoute des détails fins
+
+# ============================================
+# EMBEDDINGS
+# ============================================
+
+#EMBEDDING|https://huggingface.co/datasets/Nerfgun3/bad_prompt/resolve/main/bad_prompt_version2.pt|bad_prompt|Negative prompt helper
+
+#EMBEDDING|https://huggingface.co/datasets/gsdf/EasyNegative/resolve/main/EasyNegative.safetensors|EasyNegative|Améliore les negative prompts
+
+# ============================================
+# FLUX (Nouveaux modèles)
+# ============================================
+
+#UNET|https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors|Flux.1 Dev|Flux Development (12GB)
+
+#UNET|https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors|Flux.1 Schnell|Flux rapide (12GB)
+
+# ============================================
+# MODÈLES PERSONNALISÉS
+# ============================================
+# Ajoutez vos propres modèles ici en suivant le format:
+# TYPE|URL|NOM|DESCRIPTION
+# Types possibles: CHECKPOINT, VAE, UPSCALER, CONTROLNET, LORA, EMBEDDING, UNET, CLIP
+
+# Exemples:
+# CHECKPOINT|https://example.com/my_model.safetensors|Mon Modèle|Description de mon modèle
+# LORA|https://example.com/my_lora.safetensors|Mon LoRA|LoRA personnalisé
